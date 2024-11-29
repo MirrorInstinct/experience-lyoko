@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Exo2';
+    src: url('src/fonts/Exo_2/Exo2-Regular.ttf') format('truetype');
+  }
+
 html {
     height: 100%;
     overflow: hidden;
@@ -76,4 +81,28 @@ html {
     text-decoration: none;
     padding: 5px;
     border-radius: 5px;
+}
+
+#dialogue-container {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(58,219,255);
+    background: linear-gradient(180deg, rgba(58,219,255,1) 0%, rgba(0,111,215,1) 100%);     
+    width: 70%;
+    height: 20vh;
+    border-radius: 10px;
+    font-family: "Exo2", sans-serif;
+    font-size: 2vw;
+    box-sizing: border-box;
+    padding: 20px;
+    border: solid black 1px;
+    user-select: none;
+
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
 }
